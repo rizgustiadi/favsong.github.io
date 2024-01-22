@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="https://i.ibb.co/kmXZXxp/bmth.png"/>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fav Song</title>
+  <style media="screen">
+    * {
+     margin: 0;
+     padding: 0;
+   }
+ 
+
+   body {
+     background-image: linear-gradient(to bottom,  #030420, #000000 20%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
+   }
+
+
+
+   hr {
+     width: 50px;
+     border-color: transparent;
+     border-right-color: rgba(255, 255, 255, 0.7);
+     border-right-width: 50px;
+     position: absolute;
+     bottom: 100%;
+     transform-origin: 100% 50%;
+     animation-name: rain;
+     animation-duration: 50s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+   }
+   h1 {
+     color: #fff;
+     text-decoration: none;
+     border-radius: 0px;
+     border: 0px;
+     font-family: 'Delicious Handrawn', cursive;
+     text-align: center;             
+   }
+                
+   h2 {
+     color: #fff;
+     text-decoration: none;
+     border-radius: 0px;
+     border: 0px;
+     text-align: center;
+   }
+                
+   h3 {
+     color: #fff;
+     text-decoration: none;
+     border-radius: 0px;
+     border: 0x;
+     text-align: center;
+   }
+                
+   pre {
+      color: white;
+   }
+               
+   h4  {
+      width: 100%;
+      font-family: 'Delicious Handrawn', cursive
+      font-size: 30px;
+      margin: 0;
+   }
+   @keyframes abin {
+       0%
+       background-position-x: -500%;
+                
+       100%
+       background-position-x: 500%;
+   }
+
+   @keyframes rain {
+     from {
+       transform: rotate(105deg) translateX(0);
+     } 
+     to {
+       transform: rotate(105deg) translateX(calc(100vh + 20px));
+     }
+   }
+
+
+  </style>
+</head>
+     <center>
+         <img class="picture" src="https://i.ibb.co/kmXZXxp/bmth.png" width="250" height="250"><br>
+         <h1>FAVORIT SONG<font color="cyan"></font></h1>
+         <h2>BRING ME THE HORIZON<font color="cyan"></font></h2>
+         <h3>HAPPY SONG<font color="cyan"></font></h3>
+         <pre><h4>[ MESSAGE ]<br><font color="red"><marquee>Kamu Emang Seindah Lagu Nadhif Tapi Aku Sukanya BMTH</marquee></font></h4></pre>
+         <pre id="Clock" style="font-size: 30px; 'Delicious Handrawn', cursive; color: #fff; margin: 0;"></pre><br>
+         <audio autoplay="autoplay" controls="controls" width="128px" height="30px"><source src="song/bmth.mp3"></audio>
+     </center>
+  <body>
+
+</body> 
+<script type="text/javascript">
+
+  let hrElement;
+  let counter = 100;
+  for (let i = 0; i < counter; i++) {
+    hrElement = document.createElement("HR");
+    
+      hrElement.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+      hrElement.style.animationDuration = 0.2 + Math.random() * 0.3 + "s";
+      hrElement.style.animationDelay = Math.random() * 50 + "s";
+   
+    document.body.appendChild(hrElement);
+  }
+
+ 
+
+</script>
+</html>
